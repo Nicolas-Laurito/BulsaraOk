@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulsara Grow Shop</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />     <!--Agrego la libreria de awesome para iconos y mas-->
     <link rel="stylesheet" href="./estilos.css">      <!--linckea con el css-->
 </head>
@@ -37,40 +38,40 @@
         </section>
         </div>
         
-        <div id="quien">
+        <div id="quien" >
         <section class="item item2">
-                <div class="logo">
+                <div class="logo" data-aos="fade-right" data-aos-duration="1500">
                     <img  src="./imagenes/logoOk1.jpg" alt="">
                 </div>
-                <div class="formatoQuienesSomos">
+                <div class="formatoQuienesSomos"  data-aos="fade-left" data-aos-duration="1500">
                     <h2>Quienes Somos?</h2>
                     <p>Somos Flor y Javi... en este espacio web te ayudamos, asesoramos y ofrecemos los mejores productos para tu cultivo. Trabajamos con productos 100% naturales. </p>
                 </div>
         </section>
         </div>
     
-        <div id="prod">
+        <div id="prod" >
     <section class="item item3">
         
         
-            <div class="introProducto">
+            <div class="introProducto" data-aos="fade-right" data-aos-duration="1500">
                 <h2>Nuestros Productos</h2>   
                 <p>Accede a todos nuestros productos y consultanos para que podamos brindarte el mejor asesoramiento</p>
             </div>
             <div class="alinear">
-                <div class="alinear acomodandoProductos1">
+                <div class="alinear acomodandoProductos1" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="imagenes/Fertilizantes/fertilizantesLogo.jpg" >
                     <p><a href="pages/fertilizantes.html">Fertilizantes</a></p> <!--hago referencia a otro archivo html o web-->
                 </div>
-                <div class="alinear acomodandoProductos2">
+                <div class="alinear acomodandoProductos2" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="imagenes/Sustratos y complementos/sustratoLogo.jpg">
                     <p><a href="pages/sustratos.html">Sustratos y complementos</a></p>
                 </div>
-                <div class="alinear acomodandoProductos3">
+                <div class="alinear acomodandoProductos3" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="imagenes/parafernalia/parafernaliaLogo.jpg">
                     <p><a href="pages/parafernalia.html">Parafernalia</a></p>
                 </div>
-                <div class="alinear acomodandoProductos4">
+                <div class="alinear acomodandoProductos4" data-aos="zoom-in-up" data-aos-duration="1500">
                     <img src="imagenes/Otros/otrosLogo.jpg" >
                     <p><a href="pages/otros.html">Otros</a></p>
                 </div>
@@ -78,15 +79,15 @@
         </section>
         
     </div>
-    <div id="grow">
+    <div id="grow"  >
     <section class="item item4">
         
         
-            <div class="introGrow">
+            <div class="introGrow" data-aos="fade-left" data-aos-duration="1500">
                 <h2>Grow Tips y Video</h2>
                 <p>Aca vas a poder encontrar todos nuestros tips y enlaces a videos recomendados</p>
             </div>
-            <div class="acomodandoGrow">
+            <div class="acomodandoGrow" data-aos="zoom-out" data-aos-duration="1500">
                 <img class="imagenTips" src="imagenes/tips.jpg" >
                 <p><a class="estiloBoton" href="pages/growTips.html">Acceder</a></p>
             </div>    
@@ -116,6 +117,10 @@
             <a href="mailto:bulsara_cactus@gmail.com?subject=Consulta" target="blanck"><i class="fa-solid fa-envelope-circle-check"></i></a>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
+
 </html>

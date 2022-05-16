@@ -1479,13 +1479,14 @@
     
     .up{
         position: fixed;
-        margin-left: 1200px;
+        margin-left: 1250px;
         border: solid black 3px;
         border-radius: 50%;
         background: linear-gradient(#008f21, #73aa80) ;
         color: white;
         font-size: 30px;
         padding: 10px;
+        z-index: 2;
     }
     
     .up a{
