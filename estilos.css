@@ -15,7 +15,7 @@
 @media only screen and (min-width: 320px) and (max-width: 768px){
 
     header{
-       
+        background: linear-gradient(#219900,#7ca172) ;
         width: 100%;
         height: 100px;
         display: flex;      /*indico que dentro del header voy a trabajar con flex*/
@@ -229,7 +229,7 @@
     }
     
     footer{
-        
+        background: linear-gradient(#7ca172, #219900) ;
         width: 100%;
         height: 100px;
         display: flex;
@@ -321,7 +321,7 @@
     .descripcionHover{
         font-size: 10px;
         color: black;
-      
+        background:radial-gradient(#7ca1729d, #219900);
         text-align: center;
         margin-top: 10px;
         
@@ -459,7 +459,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1023px){
 
     header{
-       
+        background: linear-gradient(#219900,#7ca172) ;
         width: 100%;
         height: 150px;
         display: flex;      /*indico que dentro del header voy a trabajar con flex*/
@@ -735,7 +735,7 @@
     
     /*CSS del Footer*/
     footer{
-       
+        background: linear-gradient(#7ca172, #219900) ;
         width: 100%;
         height: 190px;
         display: flex;
@@ -847,7 +847,7 @@
         font-size: 15px;
         position: relative;
         color: black;
-    
+        background:radial-gradient(#7ca1729d, #219900);
         overflow:auto;
         box-shadow: 20px 20px 10px black;
         border-radius: 10%;
@@ -977,7 +977,7 @@
     /* CSS del HEader*/
     
     header{
-   
+        background: linear-gradient(#219900,#7ca172) ;
         width: 100%;
         height: 200px;
         display: flex;      /*indico que dentro del header voy a trabajar con flex*/
@@ -1256,7 +1256,7 @@
     
     /*CSS del Footer*/
     footer{
-      
+        background: linear-gradient(#7ca172, #219900) ;
         width: 100%;
         height: 220px;
         display: flex;
@@ -1368,7 +1368,7 @@
         font-size: 15px;
         position: relative;
         color: black;
-       
+        background:radial-gradient(#7ca1729d, #219900);
         overflow:auto;
         border-radius: 10%;
         text-align: center;
@@ -1492,6 +1492,50 @@
         color: black;
     }
     
+    header{
+        overflow: hidden;     
+    }
 
+    h1{
+        animation-duration: 3s;
+        animation-name: animacionH1;
+    }
+    
+    @keyframes animacionH1 {
+        0%{
+            margin-left: 100%;
+            width: 300%;
+        }
+      
+        100%{
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    nav{
+        animation-duration: 5s;
+        animation-name: animacionMenu;
+        
+    }
+
+    @keyframes animacionMenu{
+        0%{
+            opacity: 0;
+            
+        }
+        50%{
+            opacity: 0.2;
+        }
+        70%{
+            opacity: 0.4;
+        }
+        80%{
+            opacity: 0.7;
+        }
+        100%{
+            opacity: 1;
+        }
+}
     
 }
