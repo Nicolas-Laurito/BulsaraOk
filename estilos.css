@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "bulsara";             /*agrego la letra que descargue a la libreria local*/
+    src: url(./fuentes/bulsara.ttf);
+}
+
+/* CSS del HEader*/
+
+header{
+    background-color: #219900;
+    width: 100%;
+    height: 200px;
+    display: flex;      /*indico que dentro del header voy a trabajar con flex*/
+    flex-direction: column;     /*ordeno los elementos hijos en columnas*/
+    
+}
+
+header h1{
+    font-family: bulsara;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 200;       /*le da peso a la letra*/
+}
+
+nav{
+    
+    margin-top: 20px;           /*le doy espacio exterior entre el nav y el h1*/
+    display: flex;          /*indico que los hijos los ordeno con flex*/
+    flex-direction: row;    /*alineao los hijos en forma horizontal*/
+    justify-content: center;    /*alineo al centro*/
+    width: 100%;            /*ancho del nav*/
+    
+}
+
+
+nav ul{
+    display: flex;          /*ordeno los li con flex*/
+    flex-direction: row;        /*ordeno los li en forma horizontal*/
+    
+}
+nav ul li {
+    padding: 10px;      /*doy espacio entre los li*/
+    list-style: none;   /*le saco las viñetas*/
+    text-align: center;             /*alinea el texto en el centro de los botones*/
+    border: solid black 3px;
+    background-color: #008f21 ;
+}
+
+nav a{
+    text-decoration: none;      /*saca el subrayado*/
+    font-size: 20px;        
+    color: black;
+    text-align: center;
+    display: block;
+}
+
+nav li:hover{
+    background-color: black;
+    
+}    
+
+nav a:hover{
+    color: white;
+}
+
+/* CSS del Main*/
+
+.container{     /*declaro un contenedor general*/
+    
+    display: grid;      /*declaro que se maqueta usando grid*/
+    grid-template-columns: 100%;    /*una sola columna*/
+    grid-template-rows: 450px 650px 650px 650px;      /*4 filas con el 25% del heigth*/
+    background-image: url(./imagenes/fondo2.png);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+
+.container h2{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 6px #008f21;
+}
+
+.container p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.item{
+    width: 100%;    /*le doy el ancho a cada fila*/
+    height: 100%;   /*le doy el alto*/
+}
+
+.video1{
+    width: 100%;  
+    height: 100%;
+}
+
+.item1{
+    background-color: black;
+}
+
+.item2{
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    grid-template-rows: 100%;
+}
+
+.formatoQuienesSomos{
+    text-align: center;
+    padding: 50px;
+}
+
+.formatoQuienesSomos h2{
+    margin-top: 150px;
+}
+
+.item3{             /*defino la estructura del item3, 4 columnas y 2 filas*/
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 30% 70%;
+}
+.introProducto{             /*este estaria en la primer fila*/
+    grid-column: 1/5;       /*con estas dos prop unifico los espacios en la grilla de la primer fila*/
+    grid-row: 1/2;
+    align-items: center;
+    margin-top: 20px;
+}
+.alinear{           /*estaria en la segunda fila*/
+    grid-column: 1/5;   /*unifico */
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4,25%);   /*a esa unificacion le asigno otra estructura de 4columnas y una fila*/
+    grid-template-rows: 100%;
+}
+
+.acomodandoProductos{
+    display: flex;      /*indica que lo que esta dentro de esta clase se acomoda con flex*/
+    flex-direction: column;     /*acomoda a los hijos uno abajo del otro */
+    justify-content: space-around; /*espacio entre los hjijos img y P */
+    align-items: center;    /*centra a los hijos respecto de su contenedor*/
+}
+
+.acomodandoProductos p{
+    border: solid black 3px;
+    background-color: #008f21 ;
+    text-align: center;
+}
+
+.acomodandoProductos a{
+list-style: none;          
+text-decoration: none;     
+font-size: 20px;        
+color: black;
+text-align: center;
+padding: 20px;
+}
+
+.acomodandoProductos p:hover{
+background-color: black;
+} 
+
+.acomodandoProductos a:hover{
+color: white;
+}
+
+.acomodandoProductos img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 6px #008f21 ;
+}
+
+.item4{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+}
+
+.introGrow h2{
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 6px #008f21;
+}
+
+.introGrow p{
+    text-align: center;
+}
+
+.acomodandoGrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.acomodandoGrow img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 8px #008f21 ;
+    
+}
+
+.acomodandoGrow p{
+    border: solid black 3px;
+    background-color: #008f21 ;
+    text-align: center;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+
+.acomodandoGrow a{
+list-style: none;          
+text-decoration: none;     
+font-size: 20px;        
+color: black;
+text-align: center;
+display: block;
+}
+
+.acomodandoGrow p:hover{
+background-color: black;
+} 
+
+.acomodandoGrow a:hover{
+color: white;
+}
+
+/*CSS del Footer*/
+footer{
+    background-color: #219900;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    
+}
+
+
+.cajaFooter iframe{
+    height: 200px;  /*propiedades del mapa*/
+    width: 250px;
+    margin: 10px;
+
+}
+
+.cajaFooter h2{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-left: 50px; 
+}
+
+.cajaFooter h3{
+    color:white;         /*color de letra*/
+    font-weight: normal;            /*negrita*/
+    font-size: 15px;                /*tamaño de letra*/
+    font-family: 'Courier New', Courier, monospace;         /*tipo de letra*/
+    text-align: center;   
+    margin-left: 50px; 
+}
+
+.cajaFooter i{
+    font-size: 45px;
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: right;
+}
+
+.cajaFooter a{
+    text-decoration: none;
+}
+
+.cajaFooter i:hover{
+    transform: scale(1.3);
+}
+
+/*Main de las Pages*/
+
+.mainPages{
+    background-image: url(./imagenes/fondo2.png);
+    width: 100%;
+    height: 1000px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+
+/*CSS de Pages productos*/
+
+.introProd{
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.introProd h2{
+    text-shadow: 2px 2px 6px #008f21;
+}
+
+#productos{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    justify-content: space-around;
+    align-content: center;
+}
+
+#hoverProductos{
+    padding: 20px;
+}
+
+.imagenHover{
+    width: 250px;
+    height: 250px;
+    border: solid 6px #008f21;
+    border-radius: 10%;         /*hace redondos los elementos*/
+    position: absolute;
+    z-index: 1;
+}
+
+.imagenHover:hover{
+    opacity: 0;
+    transition: all 2s;
+    
+}
+  
+.descripcionHover{
+    width: 250px;
+    height: 250px;
+    font-size: 15px;
+    position: relative;
+    color: black;
+    background-color: rgb(117, 172, 23);
+    overflow:auto;
+    border: solid 6px #008f21;
+    border-radius: 10%;
+    text-align: center;
+}
+
+
+
+/*CSS Grow Tips  */
+
+.contenedorTabla{
+    background-color: #21990038;
+    width: 70%;
+    height: 200px;
+    margin-left: 15%;
+    margin-top: 20px;
+    
+}
+.tabla{
+    border: none;
+    padding: 20px;
+    padding-left: 200px;
+
+}
+
+.tabla tr{
+    background-color: black;
+    color: white;
+    
+}
+
+.articulos h2{
+   text-align: center;
+   text-shadow: 2px 2px 6px #008f21;
+}
+
+.articulos li{
+    text-align: center;
+}
+
+.articulos a{
+    text-decoration: none;
+    color: white;
+    background-color: #008f21ea;
+}
+
+.videosRecomendados h2{
+text-align: center;
+}
+
+.videosRecomendados iframe{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    
+}
+
+.ordenarVideos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    
+    
+}
+
+/*CSS Formulario de Contacto*/
+
+.formulario{
+    width:40%;
+    
+    margin-left: 400px;
+    padding-top: 100px;
+    
+}
+
+/*.formulario fieldset{
+    height: 60%;
+    
+    margin-left: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2199004d;
+}*/
+
+.formulario input{
+    width: 80%;
+    margin: 10px;
+    text-align: center;
+    margin-left: 45px;
+}
+
+.formulario textarea{
+    width: 80%;
+    margin: 10px;
+    text-align: center;
+    margin-left: 45px;
+}
+
+
+
+.up{
+    position: fixed;
+    margin-left: 1200px;
+    border: solid black 3px;
+    border-radius: 50%;
+    background-color: #008f21;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.up a{
+    color: black;
+}
