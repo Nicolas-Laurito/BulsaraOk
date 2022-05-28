@@ -104,6 +104,7 @@ html {
 .sec2 {
  width: 100%;
  min-height: 650px;
+ padding-top: 150px;
 }
 .logo{
 
@@ -129,6 +130,7 @@ html {
 .sec3{
     width: 100%;
     min-height: 650px;
+    padding-top: 100px;
 }
 
 
@@ -157,6 +159,7 @@ html {
 .sec4{
     width: 100%;
     min-height: 650px;
+    padding-top: 100px;
 }
 
 .estiloGrow{
