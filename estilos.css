@@ -57,9 +57,9 @@ html {
     /*declaro un contenedor general*/
     background-image: url(./imagenes/fondo3.png);
     font-family: 'Courier New', Courier, monospace;
-   
     background-size: cover;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .general h2 {
@@ -102,12 +102,12 @@ html {
 
 
 .sec2 {
- width: 100%;
+ 
  min-height: 650px;
  padding-top: 150px;
 }
 .logo{
-
+    
     justify-content: center;
     display: flex;
 }
@@ -122,9 +122,10 @@ html {
   
 }
 .quienSomos{
- 
+    
     text-align: center;
     padding: 5%;
+    
 }
 
 .sec3{
