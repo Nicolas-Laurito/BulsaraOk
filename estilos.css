@@ -63,14 +63,14 @@ html {
 }
 
 .general h2 {
-    font-size: 2.5vw;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 6px rgb(150, 231, 133);
 }
 
 .general p {
-    font-size: 1.5vw;
+    font-size: 20px;
     text-align: center;
     text-shadow: 1px 1px 6px white;
     font-weight: bold;
@@ -311,51 +311,18 @@ header {
 
 /* HASTA ACA LOS ESTILOS DE CSS DEL INDEX + PAGE CONTACTO PARA EL DESAFIO OBLIGATORIO */
 
-
-
-/*Main de las Pages*/
-
-.mainPages {
-    background-image: url(./imagenes/fondo3.png);
-    background-size: cover;
-    width: 100%;
-    height: 1000px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-
-}
-
-
-/*CSS de Pages productos*/
-
-.introProd {
-    text-align: center;
-    padding-top: 20px;
-
-}
-
-.introProd p {
-    text-shadow: 2px 2px 6px white;
-}
-
-.introProd h2 {
-    text-shadow: 2px 2px 6px white;
-}
-
-#productos {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    justify-content: space-around;
-    align-content: center;
-}
+/*EMPIEZA CSS DE PAGE FERTILIZANTES - SUSTRATOS - PARAFERNALIA - OTROS*/
 
 #hoverProductos {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagenHover {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 
     border-radius: 10%;
     /*hace redondos los elementos*/
@@ -371,8 +338,8 @@ header {
 }
 
 .descripcionHover {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     font-size: 15px;
     position: relative;
     color: black;
@@ -385,70 +352,62 @@ header {
 }
 
 
+/*TERMINA CSS DE PAGE FERTILIZANTES - SUSTRATOS - PARAFERNALIA - OTROS*/
 
-/*CSS Grow Tips  */
+/*EMPIEZA CSS DE PAGE GROW TIPS  */
 
-.introProd {
-    text-shadow: 1px 1px 3px white;
-}
+/*EMPIEZA ESTILOS TABLA*/
 
-.contenedorTabla {
-    background-color: #21990038;
-    width: 70%;
-    height: 200px;
+.tabla{
+    background-color: #73aa80;
     margin-left: 15%;
     margin-top: 20px;
-
+    width: 70%;
+    font-weight: bold;
+    overflow-x: scroll;
 }
-
-.tabla {
-    border: none;
-    padding: 20px;
-    padding-left: 200px;
-
-}
-
-.tabla tr {
-    background-color: black;
-    color: white;
-
-}
-
-.articulos h2 {
+.tabla tr, th, td {
+    border: solid 2px green;
     text-align: center;
-    text-shadow: 2px 2px 3px white;
+    padding: 5px;
 }
 
-.articulos li {
+/*TERMINA ESTILOS TABLA*/
+
+.articulos{
+    padding-top: 20px;
+    width: 100%;
+    
+    
+    padding-bottom: 20px;
+    
+}
+
+.accesoArticulos li {
     text-align: center;
+    list-style:none;
 }
 
-.articulos a {
-    text-decoration: none;
+.accesoArticulos a {
+    padding: 5PX;
     color: white;
     background-color: #008f21ea;
 }
 
-.videosRecomendados h2 {
-    text-align: center;
 
-    text-shadow: 1px 1px 6px white;
-}
-
-.videosRecomendados iframe {
-    width: 400px;
-    height: 400px;
+.articulos iframe {
+    width: 350px;
+    height: 350px;
     margin-top: 20px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
 }
 
-.ordenarVideos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
 
 
-}
 
 
 h1 {
