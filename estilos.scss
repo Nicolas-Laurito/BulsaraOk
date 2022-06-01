@@ -1,0 +1,450 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "bulsara";
+    /*agrego la letra que descargue a la libreria local*/
+    src: url(./fuentes/bulsara.ttf);
+}
+
+
+$gradient1:linear-gradient(#219900, #7ca172);
+$gradient2:linear-gradient(#7ca172,#219900);
+$fuente1: bulsara;
+$colorBordes: #008f21;
+
+/* EMPIEZA EL CSS DEL INDEX*/
+
+/* EMPIEZA CSS DEL HEADER*/
+
+header {
+    background: $gradient1;
+    width: 100%;
+    min-height: 120px;
+
+    h1 {
+        font-family: $fuente1;
+        font-size: 10vw;
+        text-align: center;
+        font-weight: 200; /*le da peso a la letra*/
+        text-shadow: 0 0 40px whitesmoke;
+    }
+}    
+
+.menu{
+    background: $gradient2;
+    
+    .nav-link {
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.493);
+    text-align: center;
+    font-weight: 120;
+    font-family: $fuente1;
+
+        &:hover {
+            color: whitesmoke;
+    
+        }
+    }
+}
+
+/*TERMINA CSS DEL HEADER*/
+
+/* EMPIEZA CSS DEL MAIN*/
+html {
+    scroll-behavior: smooth;
+}
+
+.general {
+    /*declaro un contenedor general*/
+    background-image: url(./imagenes/fondo3.png);
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    h2{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 6px rgb(150, 231, 133);
+    }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 6px white;
+            font-weight: bold;
+        }
+}
+
+.sec{
+    width: 100%;
+}
+.sec1{
+    width: 100%;
+    /* max-height: 400px; */
+    background-color: black;
+    opacity: 0.98;
+
+    .carousel-item img{
+        width: 50%;
+        /* height: 29vw; */
+        margin-left: 25%;
+        padding: 10px;
+    }
+
+    .carousel-indicators li{
+        border-radius: 100%;
+        height: 20px;
+        width: 20px;
+        background-color: #008f21;
+
+    } 
+}
+
+.sec2 {
+    min-height: 650px;
+    padding-top: 150px;
+    
+    .logo{
+        justify-content: center;
+        display: flex;
+    }
+    
+        img{
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            padding: 10%;
+        } 
+      
+    .quienSomos{
+        text-align: center;
+        padding: 5%;
+    }
+}
+
+
+.sec3{
+    width: 100%;
+    min-height: 650px;
+    padding-top: 100px;
+
+    .alinearok{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: solid 6px $colorBordes;
+            margin: 10px;
+        }
+  
+}
+
+.sec4{
+    width: 100%;
+    min-height: 650px;
+    padding-top: 100px;
+
+    .estiloGrow{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: solid 8px $colorBordes;
+            margin: 10px;
+        }
+    }        
+
+/*TERMINA CSS DEL MAIN*/
+
+/*EMPIEZA CSS DEL FOOTER*/
+
+.estilosFooter {
+    background: $gradient2;
+    width: 100%;
+    min-height: 220px;
+
+    .centrarIframe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        iframe {
+            height: 200px;
+            width: 250px;
+            margin: 10px;
+        }
+    }    
+    h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    h3 {
+        color: white;
+        /*color de letra*/
+        font-weight: normal;
+        /*negrita*/
+        font-size: 15px;
+        /*tamaño de letra*/
+        font-family: 'Courier New', Courier, monospace;
+        /*tipo de letra*/
+        text-align: center;
+        margin-left: 50px;
+    }
+}    
+
+.enlacesRedes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+        a {
+        text-decoration: none;
+    
+            i {
+                font-size: 45px;
+                padding: 10px;
+                color: white;
+                text-align: center;
+        
+                &:hover {
+                    transform: scale(1.3);
+            }
+        }
+    }
+}    
+
+
+/*TERMINA CSS DEL FOOTER*/
+
+.rojo{
+    background-color: red;
+    height: 50px;
+}
+
+.azul{
+    background-color: blue;
+    height: 50px;
+}
+/* TERMINA EL CSS DEL INDEX*/
+
+/*EMPIEZA CSS DE PAGE CONTACTO*/
+
+
+.estilosForm {
+    width: 40%;
+    margin-left: 30%;
+    min-height: 500px;
+    
+    .form-group label{
+        color: #219900;
+        font-weight: bold;
+    }
+  
+    .form-control{
+        border: solid 2px  #219900;
+        color: #008f21;
+        font-weight: bold;
+        
+
+            &::placeholder{
+                color: #219900;
+                font-size: 2vw;
+            }
+        }
+    }
+
+.estiloBoton{
+    margin: 10px;
+    margin-left: 25%;
+    font-size: 1.5vw;
+}
+
+
+/*TERMINA CSS DE PAGE CONTACTO*/
+
+.up {
+    position: fixed;
+    margin-left: 1250px;
+    border: solid black 3px;
+    border-radius: 50%;
+    background: $gradient1;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    z-index: 2;
+
+    a {
+        color: black;
+    }
+}
+
+header {
+    overflow: hidden;
+}
+
+
+
+
+/* HASTA ACA LOS ESTILOS DE CSS DEL INDEX + PAGE CONTACTO PARA EL DESAFIO OBLIGATORIO */
+
+/*EMPIEZA CSS DE PAGE FERTILIZANTES - SUSTRATOS - PARAFERNALIA - OTROS*/
+
+#hoverProductos {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .imagenHover {
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+        /*hace redondos los elementos*/
+        position: absolute;
+        z-index: 1;
+        box-shadow: 20px 20px 10px #219900be;
+
+        &:hover {
+            opacity: 0;
+            transition: all 2s;
+        }
+    }
+
+    .descripcionHover {
+        width: 200px;
+        height: 200px;
+        font-size: 15px;
+        position: relative;
+        color: black;
+        background: radial-gradient(#7ca1729d, #219900);
+        overflow: auto;
+        border-radius: 10%;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 20px 20px 10px black;
+    }
+}
+
+
+
+/*TERMINA CSS DE PAGE FERTILIZANTES - SUSTRATOS - PARAFERNALIA - OTROS*/
+
+/*EMPIEZA CSS DE PAGE GROW TIPS  */
+
+/*EMPIEZA ESTILOS TABLA*/
+
+.tabla{
+    background-color: #73aa80;
+    margin-left: 15%;
+    margin-top: 20px;
+    width: 70%;
+    font-weight: bold;
+    overflow-x: scroll;
+}
+.tabla tr, th, td {
+    border: solid 2px green;
+    text-align: center;
+    padding: 5px;
+}
+
+/*TERMINA ESTILOS TABLA*/
+
+.articulos{
+    padding-top: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+    
+    li {
+        text-align: center;
+        list-style:none;
+    
+        a {
+        padding: 5PX;
+        color: white;
+        background-color: #008f21ea;
+        }
+    }
+
+    iframe {
+        width: 350px;
+        height: 350px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+}
+
+
+h1 {
+    animation-duration: 3s;
+    animation-name: animacionH1;
+}
+
+@keyframes animacionH1 {
+    0% {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    100% {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.navbar {
+    animation-duration: 4s;
+    animation-name: animacionMenu;
+
+}
+
+@keyframes animacionMenu {
+    0% {
+        opacity: 0;
+
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    70% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
