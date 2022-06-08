@@ -16,6 +16,29 @@ $gradient2:linear-gradient(#7ca172,#219900);
 $fuente1: bulsara;
 $colorBordes: #008f21;
 
+/*MIXIN*/
+@mixin h1h2 ($par1, $par2, $par3){
+    font-size: $par1;
+    font-weight: $par2;
+    text-align: $par3;
+}
+
+/*MAPAS*/
+$mapa1:(
+    6px : fertilizantes,
+    7px : sustratos,
+    8px : parafernalia,
+    25px : otros,
+);
+
+@each $pixeles, $tipoProd in $mapa1{
+    .imagen--#{$tipoProd} {
+        border: solid $pixeles $colorBordes;
+    }
+
+    
+}
+
 /* EMPIEZA EL CSS DEL INDEX*/
 
 /* EMPIEZA CSS DEL HEADER*/
@@ -26,10 +49,11 @@ header {
     min-height: 120px;
 
     h1 {
+        @include h1h2 (10vw, 200, center);
         font-family: $fuente1;
-        font-size: 10vw;
-        text-align: center;
-        font-weight: 200; /*le da peso a la letra*/
+        // font-size: 10vw;
+        // text-align: center;
+        // font-weight: 200; /*le da peso a la letra*/
         text-shadow: 0 0 40px whitesmoke;
     }
 }    
@@ -67,9 +91,10 @@ html {
     overflow-x: hidden;
 
     h2{
-        font-size: 25px;
-        font-weight: bold;
-        text-align: center;
+        @include h1h2 (25px, bold, center);
+        // font-size: 25px;
+        // font-weight: bold;
+        // text-align: center;
         text-shadow: 2px 2px 6px rgb(150, 231, 133);
     }
 
@@ -145,7 +170,7 @@ html {
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            border: solid 6px $colorBordes;
+            // border: solid 6px $colorBordes;  /*lo reemplace por un MAPA para poder aplicar algo*/
             margin: 10px;
         }
   
@@ -161,7 +186,7 @@ html {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        
         }
         img{
             width: 300px;
@@ -177,7 +202,8 @@ html {
 /*EMPIEZA CSS DEL FOOTER*/
 
 .estilosFooter {
-    background: $gradient2;
+    // @extend .menu;
+    // background: $gradient2;
     width: 100%;
     min-height: 220px;
 
@@ -193,11 +219,12 @@ html {
         }
     }    
     h2 {
+        @include h1h2 (20px, bold, center);
         color: white;
-        font-weight: bold;
-        font-size: 20px;
+        // font-weight: bold;
+        // font-size: 20px;
         font-family: 'Courier New', Courier, monospace;
-        text-align: center;
+        // text-align: center;
         margin-left: 50px;
     }
 
@@ -218,7 +245,7 @@ html {
 .enlacesRedes{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content:space-between;
         align-items: center;
     
         a {
@@ -337,12 +364,12 @@ header {
     .descripcionHover {
         width: 200px;
         height: 200px;
+        border-radius: 10%;
         font-size: 15px;
         position: relative;
         color: black;
         background: radial-gradient(#7ca1729d, #219900);
         overflow: auto;
-        border-radius: 10%;
         text-align: center;
         padding: 20px;
         box-shadow: 20px 20px 10px black;

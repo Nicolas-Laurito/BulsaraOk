@@ -12,6 +12,24 @@
   src: url(./fuentes/bulsara.ttf);
 }
 
+/*MIXIN*/
+/*MAPAS*/
+.imagen--fertilizantes {
+  border: solid 6px #008f21;
+}
+
+.imagen--sustratos {
+  border: solid 7px #008f21;
+}
+
+.imagen--parafernalia {
+  border: solid 8px #008f21;
+}
+
+.imagen--otros {
+  border: solid 9px #008f21;
+}
+
 /* EMPIEZA EL CSS DEL INDEX*/
 /* EMPIEZA CSS DEL HEADER*/
 header {
@@ -22,11 +40,10 @@ header {
 }
 
 header h1 {
-  font-family: bulsara;
   font-size: 10vw;
-  text-align: center;
   font-weight: 200;
-  /*le da peso a la letra*/
+  text-align: center;
+  font-family: bulsara;
   text-shadow: 0 0 40px whitesmoke;
 }
 
@@ -153,7 +170,6 @@ html {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: solid 6px #008f21;
   margin: 10px;
 }
 
@@ -177,7 +193,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
 }
 
 .sec4 img {
@@ -216,11 +231,11 @@ html {
 }
 
 .estilosFooter h2 {
-  color: white;
-  font-weight: bold;
   font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   text-align: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
   margin-left: 50px;
 }
 
@@ -245,8 +260,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -381,12 +397,12 @@ header {
 #hoverProductos .descripcionHover {
   width: 200px;
   height: 200px;
+  border-radius: 10%;
   font-size: 15px;
   position: relative;
   color: black;
   background: radial-gradient(#7ca1729d, #219900);
   overflow: auto;
-  border-radius: 10%;
   text-align: center;
   padding: 20px;
   -webkit-box-shadow: 20px 20px 10px black;
