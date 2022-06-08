@@ -202,7 +202,7 @@ html {
 /*EMPIEZA CSS DEL FOOTER*/
 
 .estilosFooter {
-    // @extend .menu;
+    @extend .menu;
     // background: $gradient2;
     width: 100%;
     min-height: 220px;
@@ -354,10 +354,12 @@ header {
         position: absolute;
         z-index: 1;
         box-shadow: 20px 20px 10px #219900be;
+        
 
         &:hover {
             opacity: 0;
             transition: all 2s;
+            
         }
     }
 
@@ -369,9 +371,9 @@ header {
         position: relative;
         color: black;
         background: radial-gradient(#7ca1729d, #219900);
-        overflow: auto;
+        
         text-align: center;
-        padding: 20px;
+        padding: 5px;
         box-shadow: 20px 20px 10px black;
     }
 }

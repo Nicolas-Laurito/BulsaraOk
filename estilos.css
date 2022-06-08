@@ -27,7 +27,7 @@
 }
 
 .imagen--otros {
-  border: solid 9px #008f21;
+  border: solid 25px #008f21;
 }
 
 /* EMPIEZA EL CSS DEL INDEX*/
@@ -47,12 +47,12 @@ header h1 {
   text-shadow: 0 0 40px whitesmoke;
 }
 
-.menu {
+.menu, .estilosFooter {
   background: -webkit-gradient(linear, left top, left bottom, from(#7ca172), to(#219900));
   background: linear-gradient(#7ca172, #219900);
 }
 
-.menu .nav-link {
+.menu .nav-link, .estilosFooter .nav-link {
   font-size: 2vw;
   color: rgba(0, 0, 0, 0.493);
   text-align: center;
@@ -60,7 +60,7 @@ header h1 {
   font-family: bulsara;
 }
 
-.menu .nav-link:hover {
+.menu .nav-link:hover, .estilosFooter .nav-link:hover {
   color: whitesmoke;
 }
 
@@ -206,8 +206,6 @@ html {
 /*TERMINA CSS DEL MAIN*/
 /*EMPIEZA CSS DEL FOOTER*/
 .estilosFooter {
-  background: -webkit-gradient(linear, left top, left bottom, from(#7ca172), to(#219900));
-  background: linear-gradient(#7ca172, #219900);
   width: 100%;
   min-height: 220px;
 }
@@ -402,9 +400,8 @@ header {
   position: relative;
   color: black;
   background: radial-gradient(#7ca1729d, #219900);
-  overflow: auto;
   text-align: center;
-  padding: 20px;
+  padding: 5px;
   -webkit-box-shadow: 20px 20px 10px black;
           box-shadow: 20px 20px 10px black;
 }
