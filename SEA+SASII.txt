@@ -1,0 +1,12 @@
+SEO
+*Se coloco un titulo especifico para cada pagina del proyecto haciendo alucion a la pagina que representa
+*Se modificaron todos las etiquetas <h5> que habia como descripcion de productos en las secciones por etiquetas <p>
+*Se incorporaron etiquetas <meta name=”description”> y <meta name=”keywords”> en cada pagina con las palabras claves que mejoras el SEO de cada seccion
+*Se agregaron atributos ALT en imagenes 
+
+
+
+SASS
+*En la linea 20 del archivo .scss declara un @mixin y en la linea 54, 94, 221 se aplica
+*Apartir de la linea 27 se implementa un mapa que modifica la propiedad de la linea 173
+*En la linea 205 aplique @extend
