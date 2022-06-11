@@ -15,19 +15,19 @@
 /*MIXIN*/
 /*MAPAS*/
 .imagen--fertilizantes {
-  border: solid 6px #008f21;
+  border: solid 6px linear-gradient(#219900, #7ca172);
 }
 
 .imagen--sustratos {
-  border: solid 7px #008f21;
+  border: solid 7px linear-gradient(#219900, #7ca172);
 }
 
 .imagen--parafernalia {
-  border: solid 8px #008f21;
+  border: solid 8px linear-gradient(#219900, #7ca172);
 }
 
 .imagen--otros {
-  border: solid 25px #008f21;
+  border: solid 10px linear-gradient(#219900, #7ca172);
 }
 
 /* EMPIEZA EL CSS DEL INDEX*/
@@ -170,6 +170,8 @@ html {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 15px 15px rgba(0, 128, 0, 0.479);
+          box-shadow: 4px 4px 15px 15px rgba(0, 128, 0, 0.479);
   margin: 10px;
 }
 

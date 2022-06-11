@@ -16,6 +16,8 @@ $gradient2:linear-gradient(#7ca172,#219900);
 $fuente1: bulsara;
 $colorBordes: #008f21;
 
+
+
 /*MIXIN*/
 @mixin h1h2 ($par1, $par2, $par3){
     font-size: $par1;
@@ -28,12 +30,12 @@ $mapa1:(
     6px : fertilizantes,
     7px : sustratos,
     8px : parafernalia,
-    25px : otros,
+    10px : otros,
 );
 
 @each $pixeles, $tipoProd in $mapa1{
     .imagen--#{$tipoProd} {
-        border: solid $pixeles $colorBordes;
+        border: solid $pixeles $gradient1;
     }
 
     
@@ -170,6 +172,8 @@ html {
             width: 200px;
             height: 200px;
             border-radius: 50%;
+            box-shadow: 4px 4px 15px 15px  rgba(0, 128, 0, 0.479) ;
+            
             // border: solid 6px $colorBordes;  /*lo reemplace por un MAPA para poder aplicar algo*/
             margin: 10px;
         }
